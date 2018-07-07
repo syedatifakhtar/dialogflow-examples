@@ -1,0 +1,20 @@
+[
+  {
+    "value": "pepperoni",
+    "synonyms": [
+      "pepperoni"
+    ]
+  },
+  {
+    "value": "cheese",
+    "synonyms": [
+      "cheese"
+    ]
+  },
+  {
+    "value": "beef",
+    "synonyms": [
+      "beef"
+    ]
+  }
+]

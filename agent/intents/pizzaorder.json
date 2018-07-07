@@ -1,0 +1,110 @@
+{
+  "id": "650eac76-509d-49f2-bc62-e7471b86e50e",
+  "name": "pizzaorder",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "a_fetch_user_details",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1269ead2-e605-494a-a2c6-7bb6938a1c01",
+          "required": true,
+          "dataType": "@pizzatype",
+          "name": "pizzatype",
+          "value": "#e_fetch_user_details.pizzatype",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please let me know what type of pizza you want? Cheese, Beef or Pepperoni"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "4558efe6-2ee4-468c-8dba-893394625af8",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "pizzasize",
+          "value": "#e_fetch_user_details.pizzasize",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please let me know the pizza size? 12 or 18"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "07bfaf7d-6dff-444c-b191-ecd56a87d5e3",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "username",
+          "value": "#e_fetch_user_details.username",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please give me your username"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "dbb48a57-3a9b-43fa-97f6-1aebc15b2e4b",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "address1",
+          "value": "#e_fetch_user_details.address1",
+          "isList": false
+        },
+        {
+          "id": "ccc05b26-3022-4971-8ac6-ff999b8d7989",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "address2",
+          "value": "#e_fetch_user_details.address2",
+          "isList": false
+        },
+        {
+          "id": "2ee8cd02-c305-4a7d-8ade-b38e4a1541d7",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "PhoneNo",
+          "value": "#e_fetch_user_details.PhoneNo",
+          "isList": false
+        },
+        {
+          "id": "6f31fcae-a4f1-4fac-acef-c46ded125996",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "#e_fetch_user_details.email",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "lastUpdate": 1530962253,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "e_fetch_user_details"
+    }
+  ]
+}
