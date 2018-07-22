@@ -1,0 +1,4 @@
+[submodule "src/dialogflow-fulfillment-nodejs"]
+	path = src/dialogflow-fulfillment-nodejs
+	url = https://github.com/syedatifakhtar/dialogflow-fulfillment-nodejs.git
+	branch = master
